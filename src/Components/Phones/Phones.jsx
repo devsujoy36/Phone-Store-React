@@ -1,6 +1,15 @@
+import { useLoaderData } from "react-router-dom"
+import Phone from "./Phone"
+
 const Phones = () => {
+    const data = useLoaderData()
+    console.log(data);
+
   return (
-    <div>Phones</div>
+    <div>Phones
+
+        <Phone/>
+    </div>
   )
 }
 
