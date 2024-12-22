@@ -18,7 +18,12 @@ const SwiperSlider = () => {
     return (
 
         <div className='h-[80vh]'>
-            <img src={bgforsm1} className='h-[80vh] w-full' alt="" />
+            <div className='relative'>
+                <img src={bgforsm1} className='min-h-[80vh] w-full' alt="" />
+                <div>
+                    <h1 className='absolute'>Welcome To Our React Phone Hunter API</h1>
+                </div>
+            </div>
 
             <div className='md:block hidden'>
                 <Swiper
