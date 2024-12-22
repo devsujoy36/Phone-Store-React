@@ -22,7 +22,7 @@ const PhoneDetails = () => {
                     <h1><span className="font-bold ">Name: </span>{name}</h1>
                     <h1><span className="font-bold ">Brand: </span>{brand}</h1>
                     <h1><span className="font-bold ">CPU: </span>{chipSet}</h1>
-                    <h1><span className="font-bold ">RAM: </span>{memory}</h1>
+                    <h1><span className="font-bold ">MEMORY: </span>{memory}</h1>
                     <h1><span className="font-bold ">ROM: </span>{storage}</h1>
                     <h1><span className="font-bold ">Display Size: </span>{displaySize}</h1>
                     <h1 className="font-bold">Sensors:</h1>

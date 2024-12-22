@@ -6,7 +6,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Components/Home/Home.jsx'
 import Phones from './Components/Phones/Phones.jsx'
 import SignUp from './Components/SignUp/SignUp.jsx'
-import Contact from './Components/Contact/Contact.jsx'
 import PhoneDetails from './Components/Phones/PhoneDetails.jsx'
 import SwiperSlider from './Components/Swiper/SwiperSlider.jsx'
 
@@ -20,20 +19,47 @@ const router = createBrowserRouter([
         element: <SwiperSlider />,
         loader: () => fetch('https://openapi.programming-hero.com/api/phones?search=a')
       },
+
+
       {
-        path: '/phones',
+        path: '/iphone',
         element: <Phones />,
         loader: () => fetch('https://openapi.programming-hero.com/api/phones?search=iphone')
       },
+      {
+        path: '/ipad',
+        element: <Phones />,
+        loader: () => fetch('https://openapi.programming-hero.com/api/phones?search=ipad')
+      },
+      {
+        path: '/samsung',
+        element: <Phones />,
+        loader: () => fetch('https://openapi.programming-hero.com/api/phones?search=samsung')
+      },
+      {
+        path: '/oppo',
+        element: <Phones />,
+        loader: () => fetch('https://openapi.programming-hero.com/api/phones?search=oppo')
+      },
+      {
+        path: '/huawei',
+        element: <Phones />,
+        loader: () => fetch('https://openapi.programming-hero.com/api/phones?search=nova')
+      },
+      {
+        path: '/watchs',
+        element: <Phones />,
+        loader: () => fetch('https://openapi.programming-hero.com/api/phones?search=watch')
+      },
+
+
       {
         path: '/phonedetails/:phoneId',
         element: <PhoneDetails />,
         loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/phone/${params.phoneId}`)
       },
-      {
-        path: '/contact',
-        element: <Contact />
-      },
+      
+      
       {
         path: '/signup',
         element: <SignUp />
