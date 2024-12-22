@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const Phone = ({ phone }) => {
-  // console.log(phone);
   const { brand, phone_name, slug, image } = phone;
 
   const navigate = useNavigate()
