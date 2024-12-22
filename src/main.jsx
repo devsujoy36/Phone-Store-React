@@ -8,7 +8,7 @@ import Phones from './Components/Phones/Phones.jsx'
 import SignUp from './Components/SignUp/SignUp.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 import PhoneDetails from './Components/Phones/PhoneDetails.jsx'
-import HomeFeatures from './Components/Home/HomeFeatures.jsx'
+import SwiperSlider from './Components/Swiper/SwiperSlider.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <HomeFeatures />,
-        loader: () => fetch('https://openapi.programming-hero.com/api/phones?search=iphone')
+        element: <SwiperSlider />,
+        loader: () => fetch('https://openapi.programming-hero.com/api/phones?search=a')
       },
       {
         path: '/phones',
