@@ -17,11 +17,11 @@ const SwiperSlider = () => {
 
     return (
 
-        <div className='h-[80vh]'>
+        <div className=''>
             <div className='relative'>
-                <img src={bgforsm1} className='min-h-[80vh] w-full' alt="" />
-                <div>
-                    <h1 className='absolute'>Welcome To Our React Phone Hunter API</h1>
+                <img src={bgforsm1} className='w-full flex md:hidden' alt="" />
+                <div className='absolute mx-10 text-3xl top-80 '>
+                    <h1 className=' text-white'>Welcome To Our React Phone Hunter API</h1>
                 </div>
             </div>
 

@@ -18,7 +18,7 @@ const PhoneDetails = () => {
             <div className="flex md:justify-end rounded-lg items-center overflow-hidden">
                 <img className="w-56 lg:w-96 hover:scale-110 transition-all duration-150" src={image} alt="" />
             </div>
-            <div className="text-xl mt-5 md:mx-0 px-10">
+            <div className="md:text-xl mt-5 md:mx-0 px-10">
                 <div>
                     <h1><span className="font-bold ">Name: </span>{name}</h1>
                     <h1><span className="font-bold ">Brand: </span>{brand}</h1>
@@ -32,7 +32,7 @@ const PhoneDetails = () => {
                     </div>
                     <h1><span className="font-bold">Release Date: </span>{releaseDate}</h1>
                     <div className="my-5">
-                        <button onClick={goBackHandler} className="bg-emerald-600 px-4 py-2 rounded-lg hover:bg-emerald-500 active:scale-95 text-white font-semibold transition-all ">Back</button>
+                        <button onClick={goBackHandler} className="text-xl bg-emerald-600 px-4 py-2 rounded-lg hover:bg-emerald-500 active:scale-95 text-white font-semibold transition-all ">Back</button>
                     </div>
                 </div>
             </div>
