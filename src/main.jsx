@@ -12,9 +12,9 @@ const router = createBrowserRouter([
     element:<Home/>,
     children:[
       {
-        path:'/phones',
+        path:'/',
         element:<Phones/>,
-        loader:()=>fetch('https://openapi.programming-hero.com/api/phones?search=a')
+        loader:()=>fetch('/public/phone.json')
       },
       {
         path:'/phone',
