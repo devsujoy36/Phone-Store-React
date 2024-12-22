@@ -13,11 +13,12 @@ const PhoneDetails = () => {
         navigate(-1)
     }
     return (
-        <div className="grid grid-cols-2 gap-10  m-10 max-w-screen-2xl mx-auto">
-            <div className="flex justify-end rounded-lg items-center overflow-hidden">
+        <div className="md:grid grid-cols-2 flex flex-col justify-center items-center  gap-10  m-10 max-w-screen-2xl mx-auto">
+
+            <div className="flex md:justify-end rounded-lg items-center overflow-hidden">
                 <img className="w-56 lg:w-96 hover:scale-110 transition-all duration-150" src={image} alt="" />
             </div>
-            <div className="text-xl mt-5">
+            <div className="text-xl mt-5 md:mx-0 px-10">
                 <div>
                     <h1><span className="font-bold ">Name: </span>{name}</h1>
                     <h1><span className="font-bold ">Brand: </span>{brand}</h1>
@@ -30,9 +31,9 @@ const PhoneDetails = () => {
                         {sensors.map((sensor, idx) => <h1 key={idx}><span className="font-bold">--</span>  {sensor}</h1>)}
                     </div>
                     <h1><span className="font-bold">Release Date: </span>{releaseDate}</h1>
-                <div className="my-5">
-                    <button onClick={goBackHandler} className="bg-emerald-600 px-4 py-2 rounded-lg hover:bg-emerald-500 active:scale-95 text-white font-semibold transition-all ">Back</button>
-                </div>
+                    <div className="my-5">
+                        <button onClick={goBackHandler} className="bg-emerald-600 px-4 py-2 rounded-lg hover:bg-emerald-500 active:scale-95 text-white font-semibold transition-all ">Back</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@ const Phone = ({ phone }) => {
     navigate(`/phonedetails/${slug}`)
   }
   return (
-    <div className="border rounded-xl shadow-lg p-3">
+    <div className="border rounded-xl shadow-lg p-3 md:mx-0 mx-10">
 
       <figure className="flex overflow-hidden justify-center items-center mb-2">
         <img className="active:scale-95 transition-all" src={image} alt={image} />

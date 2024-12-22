@@ -2,13 +2,14 @@
 import { NavLink } from "react-router-dom"
 const Header = () => {
   return (
-    <div className="py-5 shadow-lg">
-      <div className="max-w-screen-2xl md:mx-auto flex flex-wrap gap-3 md:justify-between md:items-center mx-10">
-        <a href="" className="text-2xl font-semibold">React Phone Hunter</a>
+    <div className="py-5 shadow-lg md:bg-white bg-emerald-500 md:text-black text-white">
+      <div className="max-w-screen-2xl md:mx-auto flex flex-wrap gap-3 justify-between items-center px-10">
+
+        <a href="/" className="text-3xl font-semibold ">React Phone Hunter</a>
 
         <div className="">
 
-          <div className="md:flex  mx-5 gap-3 md:gap-10">
+          <div className="flex flex-wrap gap-3 md:gap-10 ">
 
             <NavLink to={'/'}><button className="font-semibold active:scale-95 hover:text-emerald-500 transition-all">Home</button></NavLink>
 
