@@ -16,7 +16,7 @@ const PhoneDetails = () => {
         <div className="md:grid grid-cols-2 flex flex-col justify-center items-center  gap-10  m-10 max-w-screen-2xl mx-auto">
 
             <div className="flex md:justify-end rounded-lg items-center overflow-hidden">
-                <img className="w-56 lg:w-96 hover:scale-110 transition-all duration-150" src={image} alt="" />
+                <img className="w-56 lg:w-96 hover:scale-95 transition-all duration-150" src={image} alt="" />
             </div>
             <div className="md:text-xl mt-5 md:mx-0 px-10">
                 <div>
