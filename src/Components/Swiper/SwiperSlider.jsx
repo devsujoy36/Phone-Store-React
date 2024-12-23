@@ -19,13 +19,13 @@ const SwiperSlider = () => {
 
         <div className=''>
             <div className='relative'>
-                <img src={bgforsm1} className='w-full flex md:hidden' alt="" />
+                <img src={bgforsm1} className='w-full flex lg:hidden' alt="" />
                 <div className='absolute mx-10 text-3xl top-80 '>
                     <h1 className=' text-white'>Welcome To Our React Phone Hunter API</h1>
                 </div>
             </div>
 
-            <div className='md:block hidden'>
+            <div className='lg:block hidden'>
                 <Swiper
                     spaceBetween={10}
                     effect={'fade'}
